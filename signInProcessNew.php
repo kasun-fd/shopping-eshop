@@ -34,6 +34,9 @@ if (empty($email)) {
             if (isset($_COOKIE["ridirect"])) {
                 echo "singleProductprocess.php";
                 setcookie("ridirect", false, time() - 1);
+            } else if (isset($_COOKIE["buyNow"])){
+                echo "buyNow";
+                setcookie("buyNow",false,time() - 1);
             } else if (isset($_COOKIE["cartPage"])) {
                 echo "cart.php";
                 setcookie("cartPage", false, time() - 1);

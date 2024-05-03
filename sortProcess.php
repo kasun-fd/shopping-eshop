@@ -18,15 +18,15 @@ if (!empty($search)) {
 
 
 if (!empty($min) && !empty($max)) {
-    $query .= " AND `price` BETWEEN '" . $min . "' AND '" . $max . "'";
+    $query .= " AND `current_price` BETWEEN '" . $min . "' AND '" . $max . "'";
 }
 
 if (!empty($min) && empty($max)) {
-    $query .= " AND `price` >= '" . $min . "'";
+    $query .= " AND `current_price` >= '" . $min . "'";
 }
 
 if (empty($min) && !empty($max)) {
-    $query .= " AND `price` <= '" . $max . "'";
+    $query .= " AND `current_price` <= '" . $max . "'";
 }
 
 

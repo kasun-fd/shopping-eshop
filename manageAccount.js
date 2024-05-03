@@ -110,9 +110,9 @@ function updateProfile() {
   r.onreadystatechange = function () {
     if (r.readyState == 4 && r.status == 200) {
       var t = r.responseText;
-      if (t == "save" || t == "update") {
+      if(t == "save" || t == "update"){
         window.location.reload();
-      } else {
+      }  else {
         if (t == "updatePlease Enter Your Address Line two.") {
           document.getElementById("msgProfileUpdate").innerHTML = "Please Enter Your Address Line two.";
           document.getElementById("msgDivUpdateProfile").classList.add("show");

@@ -84,7 +84,10 @@ if (empty($fname)) {
         if (isset($_COOKIE["ridirect"])) {
             echo "singleProductprocess.php";
             setcookie("ridirect", false, time() - 1);
-        } else if ($_COOKIE["cartPage"]) {
+        }  else if(isset($_COOKIE["buyNow"])){
+           echo "buyNow";
+           setcookie("buyNow",false,time()-1);
+        }  else if ($_COOKIE["cartPage"]) {
             echo "cart.php";
             setcookie("cartPage", false, time() - 1);
         } else if (isset($_COOKIE["myWishlist"])) {

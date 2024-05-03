@@ -32,6 +32,8 @@ function signUp() {
       var t = r.responseText;
       if (t == "singleProductprocess.php") {
         window.location.href = "singleProduct.php";
+      } else if(t == "buyNow"){
+        window.location.href = "singleProduct.php";
       } else if (t == "cart.php") {
         window.location.href = "cart.php";
       } else if (t == "checkout") {
@@ -153,6 +155,8 @@ function signInForm() {
       var t = r.responseText;
       if (t == "singleProductprocess.php") {
         window.location.href = "singleProduct.php";
+      } else if(t == "buyNow"){
+        window.location.href = 'singleProduct.php';
       } else if (t == "cart.php") {
         window.location.href = "cart.php";
       } else if (t == "checkout") {

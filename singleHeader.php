@@ -274,19 +274,18 @@
                         <a href="./cart.php">
                             <i style="font-size: 30px; color: #191919;" class="fa-solid fa-bag-shopping"></i>
                             <?php
-                            $email = $_COOKIE["email"];
-                            $query = Database::search("SELECT * FROM product JOIN cart ON product.id = cart.product_id JOIN product_img ON product.id = product_img.product_id JOIN indeximage ON product_img.img_path = indeximage.product_img_path 
+                            $query = Database::search("SELECT * FROM product JOIN cart ON product.id = cart.product_id JOIN product_img ON product.id = product_img.product_id JOIN indeximage ON product_img.img_path = indeximage.product_img_path
                             WHERE `user_cart_email` = '" . $email . "'");
 
                             $num = $query->num_rows;
                             if (isset($_COOKIE["name"])) {
 
                             ?>
-                                <div class="position-absolute  rounded-5" style="background-color: #a938ff; 
-                                width: 18px; 
-                                height: 18px; 
-                                display: flex; 
-                                align-items: center; 
+                                <div class="position-absolute  rounded-5" style="background-color: #a938ff;
+                                width: 18px;
+                                height: 18px;
+                                display: flex;
+                                align-items: center;
                                 justify-content: center;
                                 margin-top: -38px;
                                 margin-left: 20px;
@@ -295,11 +294,11 @@
                             <?php
                             } else {
                                 ?>
-                                <div class="position-absolute  rounded-5" style="background-color: #a938ff; 
-                                width: 18px; 
-                                height: 18px; 
-                                display: flex; 
-                                align-items: center; 
+                                <div class="position-absolute  rounded-5" style="background-color: #a938ff;
+                                width: 18px;
+                                height: 18px;
+                                display: flex;
+                                align-items: center;
                                 justify-content: center;
                                 margin-top: -38px;
                                 margin-left: 20px;

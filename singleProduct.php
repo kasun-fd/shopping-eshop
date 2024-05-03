@@ -6,9 +6,6 @@ $session_data = $_SESSION["p"];
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- molla/product.html  22 Nov 2019 09:54:50 GMT -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -484,6 +481,12 @@ $session_data = $_SESSION["p"];
                                             </div><!-- End .details-action-wrapper -->
                                         </div><!-- End .product-details-action -->
 
+                                        <div class="d-none" id="buyNowButtonAlert">
+                                            <div style="background-color: #EFF0F6;" class="col-12 pt-3 rounded-3 d-flex align-items-center justify-content-center">
+                                                <p class="text-danger fw-bold fs-5 text-justify">First, You need to fill in your address information.&nbsp<b onclick="goToAddressPage();" style="cursor:pointer; color: #777777;" class="text-decoration-underline">go to address info page</b></p>
+                                            </div>
+                                        </div>
+
                                         <div class="product-details-footer">
                                             <div class="product-cat">
                                                 <span>Category:</span>
@@ -496,10 +499,10 @@ $session_data = $_SESSION["p"];
                                                     <div class="d-flex align-items-center justify-content-around">
                                                         <?php
 
-                                                        $query = Database::search("SELECT * FROM product WHERE `id` = '".$session_data["product_id"]."'");
+                                                        $query = Database::search("SELECT * FROM product WHERE `id` = '" . $session_data["product_id"] . "'");
                                                         $data = $query->fetch_assoc();
 
-                                                        $query2 = Database::search("SELECT * FROM seller WHERE `email` = '".$data["user_email"]."'");
+                                                        $query2 = Database::search("SELECT * FROM seller WHERE `email` = '" . $data["user_email"] . "'");
                                                         $data2 = $query2->fetch_assoc();
 
                                                         // Get the original phone number
@@ -517,10 +520,10 @@ $session_data = $_SESSION["p"];
                                                         <a target="_blank" href="https://wa.me/<?php echo $formattedNumber; ?>" style="text-decoration: none; border: 2px solid #25d366; border-radius: 8px; font-size: 12px; font-weight: 600; color: #25d366;" class="ps-4 pe-4 pt-1 pb-1 d-flex align-items-center justify-content-center"><i class="fa-brands fa-whatsapp fs-2" style="color: #25d366;"></i>&nbsp;Chat</a>
                                                         <?php
 
-                                                        $query = Database::search("SELECT * FROM product WHERE `id` = '".$session_data["product_id"]."'");
+                                                        $query = Database::search("SELECT * FROM product WHERE `id` = '" . $session_data["product_id"] . "'");
                                                         $data = $query->fetch_assoc();
 
-                                                        $query2 = Database::search("SELECT * FROM seller WHERE `email` = '".$data["user_email"]."'");
+                                                        $query2 = Database::search("SELECT * FROM seller WHERE `email` = '" . $data["user_email"] . "'");
                                                         $data2 = $query2->fetch_assoc();
 
                                                         // Get the original phone number
@@ -1685,6 +1688,8 @@ $session_data = $_SESSION["p"];
     <!-- Main JS File -->
     <!-- <script src="assets/js/main.js"></script> -->
     <script src="./singleProduct.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </body>
 
 
