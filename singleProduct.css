@@ -1,0 +1,205 @@
+.btn-buy {
+    border-radius: 5px;
+    height: 40px;
+    /* background-color: #a938ff; */
+    border: 3px solid #a938ff;
+    width: 200px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-buy:hover {
+    border: none;
+    background-color: #a938ff;
+
+    .text-btn {
+        color: white;
+    }
+}
+
+.text-btn {
+    font-size: 14px;
+    color: #a938ff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.starsAlls {
+    color: #cccccc;
+}
+
+
+.active01 {
+    color: #c96 !important;
+    border-bottom-color: #c96 !important;
+}
+
+.texttext {
+    font-size: 10px;
+}
+
+
+
+@media (max-width: 992px) {
+    .flashText {
+        font-size: 15px;
+        color: #3e3f41;
+        font-weight: 600;
+    }
+
+    .titleText {
+        font-size: 11.5px;
+        color: #3D3B40;
+        font-weight: 600;
+        line-height: 15px;
+    }
+
+    .titleText1 {
+        font-size: 13px;
+        color: #3D3B40;
+        font-weight: 600;
+        line-height: 15px;
+    }
+
+    .titleDiv {
+        width: 90%;
+        height: 30px;
+        overflow: hidden;
+    }
+
+    .priceText {
+        color: #a938ff;
+        font-size: 12px;
+    }
+
+    .priceText1 {
+        color: #a938ff;
+        font-size: 12px;
+    }
+
+    .priceDiv {
+        margin-top: -0.3vw;
+    }
+
+    .dicDiv {
+        margin-top: -18px;
+    }
+
+    .disText1 {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 992px) {
+    .flashText {
+        font-size: 20px;
+        font-weight: 600;
+        color: #3e3f41;
+    }
+
+    .titleText {
+        font-size: 13px;
+        color: #3D3B40;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .titleText1 {
+        font-size: 13px;
+        color: #3D3B40;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .titleDiv {
+        width: 90%;
+        height: 35px;
+        overflow: hidden;
+    }
+
+    .priceText {
+        color: #a938ff;
+        font-size: 16.5px;
+    }
+
+    .priceText1 {
+        color: #a938ff;
+        font-size: 16px;
+    }
+
+    .priceDiv {
+        margin-top: 0.5vw;
+    }
+
+    .dicDiv {
+        margin-top: -15px;
+    }
+
+    .disText1 {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .flashText {
+        font-size: 17px;
+        font-weight: 600;
+        color: #3e3f41;
+    }
+
+    .disText1 {
+        font-size: 6px;
+    }
+
+    .notDis {
+        margin-left: 65px;
+    }
+}
+
+@media (min-width: 576px) {
+    .flashText {
+        font-size: 20px;
+        font-weight: 600;
+        color: #3e3f41;
+    }
+
+    .notDis {
+        margin-left: 65px;
+    }
+}
+
+.polaroid {
+    transition: all 0.4s;
+}
+
+.polaroid:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pointer {
+    clip-path: polygon(0 0, 100% 0%, 76% 100%, 0% 100%);
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 30%;
+    height: 18px;
+    background-color: #a938ff;
+    border-radius: 50px;
+}
+
+/* =================================================== */
+

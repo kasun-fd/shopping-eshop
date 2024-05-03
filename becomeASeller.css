@@ -1,0 +1,381 @@
+body {
+    font-size: 14px;
+}
+
+span {
+    font-size: 14px;
+}
+
+.overlay {
+    background: rgb(0 0 0 / 55%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1030;
+}
+
+.search-section {}
+
+.filter-header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.filter-title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 14px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.row-grid img {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .filters-actions {
+        position: fixed;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        border: 0;
+        bottom: 0;
+        z-index: 1031;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px -2px 3px rgb(0 0 0 / 21%);
+        -webkit-box-shadow: 0px -2px 3px rgb(0 0 0 / 21%);
+        -moz-box-shadow: 0px -2px 3px rgb(0 0 0 / 21%);
+        height: 50px;
+    }
+
+    .filters-actions>div {
+        flex: 1;
+        text-align: center;
+
+    }
+
+    .filters-actions>div:first-of-type {
+        border-right: 1px solid #d6d1ce;
+    }
+
+    .filters-actions>div>* {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /*.no-border-select.sort-select + .select2-container--default .select2-selection--single{
+      background-image: none;
+      padding:10px;
+    }*/
+    .filter-btn,
+    .filter-btn:hover,
+    .filter-btn:focus,
+    .filter-btn:active {
+        height: 50px;
+        border: 0;
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        border-radius: 0;
+    }
+
+    .sort-drop .dropdown-menu {
+        width: 100%;
+        left: 0;
+        position: fixed !important;
+        transform: translateY(100%) !important;
+        bottom: 50px !important;
+        top: auto !important;
+        text-align: center;
+        border-radius: 6px 6px 0 0 !important;
+        box-shadow: none !important;
+        transition: .3s;
+        display: block;
+        /* border: 0;*/
+        z-index: -11;
+    }
+
+    .sort-drop .dropdown-menu .dropdown-item {
+        padding: 15px 20px !important;
+    }
+
+    .sort-drop .dropdown-menu .dropdown-item:first-child {
+        border-radius: 6px 6px 0 0 !important;
+    }
+
+    .sort-drop.show .dropdown-menu {
+        transform: translateY(0) !important;
+    }
+
+    .btn.sort-toggle {
+        background-image: none;
+        padding: 10px !important;
+        width: 100%;
+        border: 0;
+        height: 50px;
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .sidebar {
+        position: fixed;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -o-transition: .3s;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+
+        background: #fff;
+
+    }
+
+    .sidebar.open {
+        z-index: 1032;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    .sidebar__inner {
+        height: calc(100% - 58px);
+        overflow-y: auto;
+    }
+
+    .filter-header {
+        height: 58px;
+    }
+
+    .filter-body {
+        padding-right: 0;
+    }
+}
+
+/* ============================ add product button =================*/
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+/* ====================  save btn =============================*/
+
+.search-btn {
+    background-image: linear-gradient(to right, #a938ff, #bd66ff);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: #ffffff;
+    border-radius: 10px;
+    display: block;
+    font-size: 14px;
+    border: none;
+}
+
+.search-btn:hover {
+    background-image: linear-gradient(to right, #bd66ff, #a938ff);
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    /* change the direction of the change here */
+    text-decoration: none;
+    border: none;
+}
+
+.clear-btn {
+    border: 2px solid #a938ff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 10px;
+    display: block;
+    font-size: 14px;
+    color: #a938ff;
+}
+
+.clear-btn:hover {
+    background-image: linear-gradient(to right, #a938ff, #bd66ff);
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    /* change the direction of the change here */
+    text-decoration: none;
+}
+
+
+/* ========================== card =======================*/
+.titleDiv {
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.titleText {
+    font-size: 13px;
+    line-height: 15px;
+    color: black;
+}
+
+.priceDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5px;
+}
+
+.priceText {
+    color: #a938ff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dicDiv {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -18px;
+}
+
+.disText1 {
+    font-size: 13px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* ========================= update button ========================*/
+
+.btn-update {
+    background-image: linear-gradient(to right, #a938ff, #bd66ff);
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    border-radius: 8px;
+    display: block;
+}
+
+.btn-update:hover {
+    background-image: linear-gradient(to right, #bd66ff, #a938ff);
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+
+/* =========================== */
+.activeLabel {
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    .imgOpt {
+        height: 12vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .imgOpt {
+        height: 21vw;
+    }
+}
+
+
+.arrowMove::before {
+    content: "";
+    display: block;
+    animation: moveLeft 1s linear infinite;
+}
+
+@keyframes moveLeft {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 25%;
+    }
+
+    100% {
+        margin-left: 50%;
+    }
+
+    /* Moves the element completely out of view */
+}
+
+.orderBox {
+    width: 50px;
+    transition: all 0.3s;
+}
+
+.curcleBox {
+    margin-top: -50px;
+    margin-left: -10px;
+    transition: all 0.3s;
+}
+
+.orderBox:hover {
+    width: 70px;
+
+    .curcleBox {
+        margin-top: -50px;
+        margin-left: -30px;
+    }
+}

@@ -1,0 +1,247 @@
+@media (min-width: 992px) {
+    .starts {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .starts {
+        font-size: 15px;
+    }
+}
+
+/* .selectedStars{
+    background-color: #ede4ff;
+    border-radius: 5px;
+} */
+
+.btnClear{
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btnClear:hover{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.orange {
+    color: #a938ff;
+}
+
+.gray {
+    color: #c1cad7;
+}
+
+.textBox{
+    transition: all 0.3s;
+}
+
+.textBox:hover {
+    margin-left: 20px;
+    color: #a938ff;
+}
+
+.checked{
+    color: #a938ff;
+}
+
+.polaroid{
+    transition: all 0.4s;
+}
+
+.polaroid:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ============================================ */
+
+@media (max-width: 992px) {
+    .starsAlls {
+        font-size: 8px;
+    }
+
+    .reviewsNum {
+        font-size: 8px;
+    }
+
+    .mainGrid {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        gap: 10px;
+    }
+
+    .imgOpt {
+        height: 17vw;
+        object-fit: cover;
+    }
+
+    .starsDiv {
+        margin-bottom: 5px;
+    }
+
+    .titleText {
+        font-size: 11px;
+    }
+
+    .titleDiv {
+        margin-bottom: 5px;
+        height: 24px;
+        overflow: hidden;
+        line-height: 12px;
+    }
+
+    .priceText {
+        font-size: 11px;
+        font-weight: 600;
+        color: #a938ff;
+    }
+
+    .disText1 {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    .starsAlls {
+        font-size: 8px;
+    }
+
+    .reviewsNum {
+        font-size: 10px;
+    }
+
+    .mainGrid {
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        gap: 10px;
+    }
+
+    .priceText {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .imgOpt {
+        height: 16vw;
+        object-fit: cover;
+    }
+
+    .starsDiv {
+        margin-bottom: 5px;
+    }
+
+    .titleText {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .titleDiv{
+        height: 30px;
+        overflow: hidden;
+    }
+    .priceText{
+        color: #a938ff;
+    }
+    .disText1{
+        color: #777777;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    .starsAlls {
+        font-size: 8px;
+    }
+
+    .reviewsNum {
+        font-size: 8px;
+    }
+
+    .mainGrid {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 10px;
+    }
+
+    .imgOpt {
+        height: 28vw;
+        object-fit: cover;
+    }
+
+    .starsDiv {
+        margin-bottom: 5px;
+    }
+
+    .priceText {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .titleDiv {
+        margin-bottom: 5px;
+        height: 30px;
+        padding-top: 5px;
+    }
+
+    .titleText {
+        font-size: 12px;
+    }
+
+    .disText1 {
+        font-size: 9px;
+    }
+
+    .dicDiv {
+        margin-top: -13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .starsAlls {
+        font-size: 8px;
+    }
+
+    .reviewsNum {
+        font-size: 8px;
+    }
+
+    .mainGrid {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        align-items: center;
+        width: 100%;
+        gap: 13px;
+    }
+
+    .imgOpt {
+        height: 44vw;
+    }
+
+    .starsDiv {
+        margin-bottom: 5px;
+    }
+
+    .priceText {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+
+    .titleDiv {
+        margin-bottom: 5px;
+    }
+
+    .titleText {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .disText1 {
+        font-size: 10px;
+    }
+
+    .dicDiv {
+        margin-top: -13px;
+
+    }
+}

@@ -1,0 +1,206 @@
+/* ============================== LIST ================================= */
+
+.AccountMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AccountMainSub {
+    width: 95%;
+    position: relative;
+}
+
+.AccountDivFirst {
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    background-color: #dfb3ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    border-radius: 10px 50px 50px 10px;
+    margin-bottom: 20px;
+}
+
+.AccountDivOthers {
+    width: 100%;
+    height: 50px;
+    background-color: #e3e3e3;
+    /* border-bottom: 1px solid #bdbdbd; */
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #191919;
+    transition: all 0.3s;
+}
+
+.AccountDivOthers:hover {
+    background-color: #d6d6d6;
+}
+
+.AccountDivOthers:hover .AccountIconText {
+    font-size: 15px;
+}
+
+.AccountDivOthers:hover .AccountIcon {
+    font-size: 28px;
+}
+
+.AccountDivOthers:hover .AccountIcon1 {
+    font-size: 32px;
+}
+
+.AccountName {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e03e0;
+    transition: all 0.4s;
+}
+
+.AccountIconsDiv {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.AccountIcon {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.AccountIconsTextDiv {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.AccountIconText {
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ======================= LOGIN BUTTON ========================== */
+
+
+.btn-grad {
+    width: 102px;
+    height: 35px;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+    margin-right: 10px;
+    /* margin: 10px; */
+    /* padding: 15px 45px; */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px 50px 50px 10px;
+    display: block;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* =========================== Profile ================================= */
+
+.profile-img {
+    border-radius: 10vw;
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+}
+
+.imgIcon {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    height: 55px;
+    width: 55px;
+    border: 3px solid #9707ff;
+    border-radius: 10vw;
+}
+
+/* =================================== ALERT =============================== */
+
+.box {
+    position: fixed;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #72e434a8;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 500px;
+    pointer-events: none;
+    transition: 0.2s;
+    z-index: 9999999;
+}
+
+.box .image {
+    background-color: #fff;
+    padding: 10px 12px;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .image img {
+    width: 15px;
+    height: 15px;
+}
+
+.box .message {
+    font-size: 0vw;
+    margin: 0px 0px;
+    color: white;
+    transition: 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.click {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container .click:active {
+    background-color: #e2e2e2;
+}

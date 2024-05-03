@@ -1,0 +1,721 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.animate-me {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.animate-me.animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden-content {
+    /* Optionally style the hidden content while waiting to load */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden-content.loaded {
+    opacity: 1;
+}
+
+/* ========================================================== */
+
+.searchMobile {
+    font-size: 16px;
+}
+
+@media (max-width: 576px) {
+    .searchMobile {
+        font-size: 14px;
+    }
+}
+
+/* ========================================================== */
+
+@media (max-width: 576px) {
+    .e {
+        height: 60px;
+    }
+
+    .e2 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 576px) {
+    .e {
+        height: 75px;
+    }
+
+    .e2 {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+/* ========================================================== */
+
+@media (max-width: 576px) {
+    .flashOne {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .flashTwo {
+        font-size: 15px;
+        font-weight: 700;
+        color: #9400ff;
+        text-decoration: none;
+    }
+
+    .timeFlash {
+        height: 50px;
+    }
+
+    .flashEndIn {
+        color: #FEFBF6;
+        letter-spacing: 0.2vw;
+        font-size: 2.7vw;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    }
+
+    .flashNumbers {
+        border-radius: 6px;
+        background-color: #FEFBF6;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .flashDots {
+        color: #FEFBF6;
+        font-weight: 700;
+        font-size: 3vw;
+    }
+
+    .flashContent {
+        background-color: #ffffff;
+        height: 240px;
+        display: flex;
+    }
+
+    .flashContentTwo {
+        height: 240px;
+    }
+
+    .flashContentMainImage {
+        margin-top: 1vw;
+        height: 140px;
+        width: 140px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .flashContentPrice {
+        font-weight: 600;
+        color: #9400ff;
+        font-size: 13px;
+    }
+
+    .flashContentOldPrice {
+        text-decoration: line-through;
+        color: #B6BBC4;
+        font-size: 10px;
+    }
+
+    .flashContentDiscount {
+        text-decoration: none;
+        font-size:9px;
+    }
+
+    .flashContentSubImages {
+        height: 65px;
+        width: 65px;
+        margin-left: 10px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .flashContentSub {
+        height: 240px;
+    }
+}
+
+@media (min-width: 576px) {
+    .flashOne {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .flashTwo {
+        font-size: 18px;
+        font-weight: 700;
+        color: #9400ff;
+        text-decoration: none;
+    }
+
+    .timeFlash {
+        height: 55px;
+    }
+
+    .flashEndIn {
+        color: #FEFBF6;
+        letter-spacing: 0.2vw;
+        font-size: 2vw;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    }
+
+    .flashNumbers {
+        border-radius: 6px;
+        background-color: #FEFBF6;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .flashDots {
+        color: #FEFBF6;
+        font-weight: 700;
+        font-size: 3vw;
+    }
+
+    .flashContent {
+        background-color: #ffffff;
+        height: 250px;
+        display: flex;
+    }
+
+    .flashContentBig {
+        height: 250px;
+    }
+
+    .flashContentMainImage {
+        margin-top: 7px;
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .flashContentPrice {
+        font-weight: 600;
+        color: #9400ff;
+        font-size: 13px;
+    }
+
+    .flashContentOldPrice {
+        text-decoration: line-through;
+        line-height: 2px;
+        color: #B6BBC4;
+        font-size: 11px;
+    }
+
+    .flashContentDiscount {
+        text-decoration: none;
+        font-size: 9px;
+    }
+
+    .flashContentSubImages {
+        height: 75px;
+        width: 75px;
+        margin-left: 10px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .flashContentSub {
+        height: 250px;
+    }
+}
+
+/* ========================================================== */
+
+@media (max-width: 576px) {
+    .JustTitle {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .justContentFirstDiv {
+        gap: 5vw;
+    }
+
+    .justContentSecondDiv {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4vw;
+    }
+
+    .justContentThirdDiv {
+        width: 44vw;
+    }
+
+    .justContentImageDiv {
+        width: 44vw;
+        height: 44vw;
+    }
+
+    .justContentImages {
+        width: 44vw;
+        height: 44vw;
+    }
+
+    .justContentTitleDiv {
+        width: 40vw;
+        height: 6.8vw;
+        overflow: hidden;
+        margin-left: 7px;
+        margin-top: 2vw;
+    }
+
+    .justContentTitle {
+        font-size: 3.5vw;
+        line-height: 3.3vw;
+        font-weight: 600;
+    }
+
+    .justContentReviewDiv {
+        width: 40vw;
+        margin-left: 7px;
+        margin-top: 2vw;
+        display: flex;
+    }
+
+    .justContentPriceSubDiv {
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .justContentStarIcon {
+        font-size: 2.5vw;
+        color: orange;
+    }
+
+    .justContentReviews {
+        font-size: 2.5vw;
+        color: #a4a1a1;
+    }
+
+    .justContentSoldDiv {
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .justContentSold {
+        font-size: 2.5vw;
+        padding-left: 0.8vw;
+        color: #a4a1a1;
+    }
+
+    .justContentPriceDiv {
+        width: 40vw;
+        margin-left: 7px;
+        margin-top: 2vw;
+        display: grid;
+        padding-bottom: 1.5vw;
+    }
+
+    .justContentPrice {
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .justContentPriceTag {
+        font-size: 4vw;
+        color: #9400ff;
+    }
+
+    .justContentPriceOldPrice {
+        text-decoration: line-through;
+        font-size: 3vw;
+        color: #a4a1a1;
+    }
+}
+
+@media (min-width: 576px) {
+    .JustTitle {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    /* .justContentFirstDiv {} */
+
+    .justContentSecondDiv {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.8vw;
+    }
+
+    .justContentThirdDiv {
+        width: 29.5vw;
+    }
+
+    .justContentImageDiv {
+        width: 29.5vw;
+        height: 29.5vw;
+    }
+
+    .justContentImages {
+        width: 29.5vw;
+        height: 29.5vw;
+    }
+
+    .justContentTitleDiv {
+        width: 23vw;
+        height: 6.8vw;
+        overflow: hidden;
+        margin-left: 1.5vw;
+        margin-top: 2vw;
+    }
+
+    .justContentTitle {
+        font-size: 2vw;
+        line-height: 3.3vw;
+        font-weight: 600;
+    }
+
+    .justContentReviewDiv {
+        width: 30vw;
+        margin-left: 1.5vw;
+        margin-top: 0.4vw;
+        display: flex;
+    }
+
+    .justContentPriceSubDiv {
+        width: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .justContentStarIcon {
+        font-size: 1.5vw;
+        color: orange;
+    }
+
+    .justContentReviews {
+        font-size: 1.5vw;
+        color: #a4a1a1;
+    }
+
+    .justContentSoldDiv {
+        width: 17vw;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .justContentSold {
+        font-size: 1.5vw;
+        padding-left: 0.8vw;
+        color: #a4a1a1;
+    }
+
+    .justContentPriceDiv {
+        width: 30vw;
+        margin-left: 1.5vw;
+        margin-top: 0.4vw;
+        display: grid;
+        padding-bottom: 1.5vw;
+    }
+
+    .justContentPrice {
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .justContentPriceTag {
+        font-size: 2.5vw;
+        color: #9400ff;
+    }
+
+    .justContentPriceOldPrice {
+        text-decoration: line-through;
+        font-size: 1.7vw;
+        color: #a4a1a1;
+    }
+}
+
+/* ========================================================== */
+
+
+
+/* ========================================================== */
+
+.slider {
+    width: 100%;
+    max-width: 100vw;
+    height: 24vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 0.5vw;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #fff;
+    margin: 0.7vw;
+    border-radius: 1vw;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 1.7vw;
+}
+
+/* ========================================================== */
+
+.t:hover {
+    cursor: pointer;
+}
+
+.u {
+    background-color: #ede4ff;
+}
+
+.u:hover {
+    cursor: pointer;
+    background-color: #e4d9fa;
+}
+
+@media (min-width: 768px) {
+    .p1 {
+        height: 2vw;
+    }
+
+    .p2 {
+        font-size: 0.8vw;
+        color: #3e3f41;
+    }
+}
+
+#redirectPage {
+    cursor: pointer;
+}
+
+/* ========================================================== */
+
+@media (min-width: 768px) {
+    .p {
+        height: 5.5vw;
+    }
+
+    .p2 {
+        font-size: 0.9vw;
+        font-weight: 600;
+        color: #3e3f41;
+    }
+}
+
+@media (width: 768px) {}
+
+#redirectPage {
+    cursor: pointer;
+}
+
+/* ========================================================== */
+
+.checked {
+    color: #9a10fe;
+}
+
+.uncheck {
+    color: #3e3f41;
+}
+
+.suggesion {
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.suggesion:hover {
+    border-radius: 8px;
+    background-color: #ede4ff;
+}
+
+/* ========================================================== */
+
+.polaroid{
+    transition: all 0.4s;
+}
+
+.polaroid:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shopMoreButton {
+    color: #9a10fe;
+    border: 0.2vw solid #9a10fe;
+    border-radius: 8px;
+    font-size: 0.8vw;
+    font-weight: 600;
+    padding: 0.5vw;
+    text-decoration: none;
+    letter-spacing: 0.1vw;
+}
+
+.shopMoreButton:hover {
+    background-color: #9a10fe;
+    text-decoration: none;
+    border: 0.2vw solid wheat;
+    color: wheat;
+}
+
+/* ========================================================== */
+
+@media (max-width: 768px) {
+    .logo-new {
+        height: 15vw;
+    }
+}
+
+/* ========================================================== */
+
+
+@media (min-width: 992px) {
+    .fontMiddle {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fontMiddle {
+        font-size: 9px;
+    }
+}
+
+/* ======================== fashion DIV ==============================*/
+
+@media (min-width: 1231px) {
+    .nextBigDiv {
+        height: 140px;
+    }
+
+    .divText {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .pp{
+        height: 80px;
+    }
+}
+
+@media (max-width: 1231px) {
+    .nextBigDiv {
+        height: 120px;
+    }
+
+    .divText {
+        font-size: 10.5px;
+        font-weight: 600;
+    }
+    .pp{
+        height: 70px;
+    }
+}

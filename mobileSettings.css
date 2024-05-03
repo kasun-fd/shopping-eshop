@@ -1,0 +1,110 @@
+.mobileSettingMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mobileSeettingSub{
+    width: 95%;
+}
+.mobileSettingDiv{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #191919;
+}
+.mobileSettingDiv:hover{
+    background-color: #d6d6d6;
+}
+.mobileSettingDiv1{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+}
+.mobileSettingDiv2{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobileSettingIcon{
+    font-size: 18px;
+    color: #191919;
+}
+.mobileSettingChangePasswordText{
+    font-size: 14px;
+    font-weight: 600;
+}
+.mobileSettingDivtwo{
+    width: 100%;
+    height: 70px;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.3s;
+    border-radius: 10px;
+    background-color: #842029;
+    cursor: pointer;
+    text-decoration: none;
+}
+.mobileSettingDivtwo:hover{
+    background-color: #511319;
+}
+.mobileSettingLogoutFirst{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.mobileSettingIcon2{
+    font-size: 40px;
+    color: wheat;
+}
+.mobileSettingLogoutSecond{
+    width: 300px;
+    height: 70px;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+}
+.mobileSettingLogoutMainTextDiv{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding-left: 10px;
+}
+.mobileSettingLogoutSubTextDiv{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-left: 10px;
+}
+.mobileSettinglogoutText{
+    font-size: 16px;
+    font-weight: 600;
+    color: wheat;
+}
+.mobileSettinglogoutEmail{
+    font-size: 12px;
+    color: wheat;
+}

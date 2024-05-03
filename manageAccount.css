@@ -1,0 +1,190 @@
+.sidebar {
+    margin: 0;
+    padding-bottom: 15px;
+    width: 200px;
+    background-color: #ede4ff;
+    position: fixed;
+    height: auto;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.sidebar a.active {
+    background-color: #9b12ff;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 15px;
+}
+
+div.content {
+    margin-left: 200px;
+    margin-top: 3px;
+    padding-left: 10px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+        font-size: 20px;
+    }
+
+    div.content {
+        margin-left: 0;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        font-size: 20px;
+    }
+}
+
+/* ================================================================ */
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ===================================== password change button ==============================*/
+
+.btn-grad1 {
+    background-image: linear-gradient(to left, #b54dff, #9f1aff);
+    text-align: center;
+    transition: all 0.5s;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad1:hover {
+    background-image: linear-gradient(to left, #9f1aff, #b54dff);
+    text-decoration: none;
+}
+
+/* ==================================== Change Password Success Button ===========================*/
+
+.btn-grad2 {
+    background-image: linear-gradient(to left, #b54dff, #9f1aff);
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn-grad2:hover {
+    background-image: linear-gradient(to left, #9f1aff, #b54dff);
+    text-decoration: none;
+}
+
+/* ================================= Update Profile Button ================================*/
+.btnUpdate {
+    background-image: linear-gradient(to left, #b54dff, #9f1aff);
+    text-align: center;
+    transition: all 0.5s;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btnUpdate:hover {
+    background-image: linear-gradient(to left, #9f1aff, #b54dff);
+    text-decoration: none;
+}
+
+/* ============================ change Password Form Button ======================================*/
+.submitButton {
+    background-image: linear-gradient(to left, #b54dff, #9f1aff);
+}
+
+.submitButton:hover {
+    background-image: linear-gradient(to left, #9f1aff, #b54dff);
+}
+
+/* ================================== confirm buttom ====================================*/
+.buttonConfirm {
+    border: none;
+    background-image: linear-gradient(to left, #8a2ae2, #4e03e0);
+    transition: all 0.3s;
+    color: white;
+    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.buttonConfirm:hover {
+    color: white;
+    border: none;
+    background-image: linear-gradient(to left, #4e03e0, #8a2ae2);
+}
+
+/* =============================== not now confirm ================================*/
+.notNowComfirm {
+    background-image: linear-gradient(to right, #e52d27,#b31217);
+    transition: 0.5s;
+    border-radius: 8px;
+    display: block;
+    border: none;
+    width: 80px;
+    height: 30px;
+    color: white;
+    font-size: 13px;
+}
+
+.notNowComfirm:hover {
+    background-image: linear-gradient(to right,#b31217,#e52d27);
+    /* change the direction of the change here */
+    text-decoration: none;
+    border: none;
+    color: white;
+}

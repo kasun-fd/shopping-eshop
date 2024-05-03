@@ -1,0 +1,46 @@
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+   }
+	100% {
+		transform: translateX(calc(-8vw * 7));
+   }
+}
+.slider11 {
+	background: white;
+	height: 3vw;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 85vw;
+}
+.slider11::before, .slider11::after {
+	background: linear-gradient(to right, #ede4ff 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 3vw;
+	position: absolute;
+	width: 3vw;
+	z-index: 2;
+}
+.slider11::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+.slider11::before {
+	left: 0;
+	top: 0;
+}
+.slider11 .slide-track11 {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(8vw * 14);
+}
+.slider11 .slide11 {
+	height: 3vw;
+	width: 8vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

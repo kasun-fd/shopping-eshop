@@ -1,0 +1,202 @@
+@media (max-width: 576px) {
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+    #faq__accordian-main-wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+    }
+
+    .faq__accordion-content p {
+        margin: 0;
+    }
+
+    .faq__accordian-heading {
+        background-color: #eeeeee;
+        padding: 10px 30px 10px 20px;
+        display: block;
+        margin-bottom: 15px;
+        position: relative;
+        font-weight: 500;
+        text-decoration: navajowhite;
+        color: #000000;
+        border-radius: 10px;
+    }
+
+    .faq__accordian-heading::before {
+        color: #ff6c3a;
+        font-family: fontawesome;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        -webkit-transition: 0.3s linear all;
+        -moz-transition: 0.3s linear all;
+        -ms-transition: 0.3s linear all;
+        -o-transition: 0.3s linear all;
+        transition: 0.3s linear all;
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -moz-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    .faq__accordian-heading.active {
+        background-color: #bdbdbd;
+    }
+
+    .faq__accordian-heading.active::before {
+        -webkit-transition: 0.3s linear all;
+        -moz-transition: 0.3s linear all;
+        -ms-transition: 0.3s linear all;
+        -o-transition: 0.3s linear all;
+        transition: 0.3s linear all;
+        -webkit-transform: translateY(-50%) rotate(360deg);
+        -moz-transform: translateY(-50%) rotate(360deg);
+        -ms-transform: translateY(-50%) rotate(360deg);
+        -o-transform: translateY(-50%) rotate(360deg);
+        transform: translateY(-50%) rotate(360deg);
+    }
+
+    .faq__accordian-heading.active::before {
+        color: #ffffff;
+    }
+
+    .faq__accordion-content {
+        display: none;
+        padding: 10px 20px;
+    }
+
+    .iconAllCategories {
+        margin-left: 50px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+    #faq__accordian-main-wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+    }
+
+    .faq__accordion-content p {
+        margin: 0;
+    }
+
+    .faq__accordian-heading {
+        background-color: #eeeeee;
+        padding: 10px 30px 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 15px;
+        position: relative;
+        font-weight: 500;
+        text-decoration: navajowhite;
+        color: #000000;
+        border-radius: 10px;
+    }
+
+    .faq__accordian-heading::before {
+        color: #ff6c3a;
+        font-family: fontawesome;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        -webkit-transition: 0.3s linear all;
+        -moz-transition: 0.3s linear all;
+        -ms-transition: 0.3s linear all;
+        -o-transition: 0.3s linear all;
+        transition: 0.3s linear all;
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -moz-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    .faq__accordian-heading.active {
+        background-color: #bdbdbd;
+    }
+
+    .faq__accordian-heading.active .iconCategories {
+        color: #ffffff;
+    }
+
+    .faq__accordian-heading.active::before {
+        -webkit-transition: 0.3s linear all;
+        -moz-transition: 0.3s linear all;
+        -ms-transition: 0.3s linear all;
+        -o-transition: 0.3s linear all;
+        transition: 0.3s linear all;
+        -webkit-transform: translateY(-50%) rotate(360deg);
+        -moz-transform: translateY(-50%) rotate(360deg);
+        -ms-transform: translateY(-50%) rotate(360deg);
+        -o-transform: translateY(-50%) rotate(360deg);
+        transform: translateY(-50%) rotate(360deg);
+    }
+
+    .faq__accordian-heading.active::before {
+        color: #ffffff;
+    }
+
+    .faq__accordion-content {
+        display: none;
+        padding: 10px 20px;
+    }
+
+    .iconAllCategories {
+        margin-left: 50px;
+        font-weight: 400;
+    }
+
+    .iconCategories {
+        font-size: 25px;
+    }
+}
+
+/* ============================ HEADER 3-DOTS ===========================*/
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -137px;
+    margin-top: -30px;
+    border-radius: 1.5vw;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.show {
+    display: block;
+}

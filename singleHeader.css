@@ -1,0 +1,46 @@
+.topPart a {
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9707ff;
+}
+
+.topPart {
+    text-decoration: none;
+}
+
+/* ========================== SEARCH BAR ==========================*/
+.suggesion {
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.suggesion:hover {
+    border-radius: 8px;
+    background-color: #ede4ff;
+}
+
+#dropdownSearch {
+    transition: all 0.5s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .paymentText{
+        font-size: 30px;
+    }
+    .nextText{
+        font-size: 13px;
+    }
+    .imgEdit{
+        width: 28vw;
+        height: 28vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .paymentText{
+        font-size: 30px;
+    }
+    .nextText{
+        font-size: 13px;
+    }
+    .imgEdit{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .paymentText{
+        font-size: 5vw;
+    }
+    .nextText{
+        font-size: 3.5vw;
+    }
+    .imgEdit{
+        width: 70vw;
+        height: 70vw;
+    }
+}

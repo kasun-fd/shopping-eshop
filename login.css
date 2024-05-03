@@ -1,0 +1,371 @@
+.container1 {
+  background-image: linear-gradient(to right, #8b2be2, #4d02e0);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: #FFF;
+}
+
+header {
+  font-size: 25px;
+  font-weight: 600;
+  color: #232836;
+  text-align: center;
+}
+
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
+}
+
+.optiongender {
+  font-size: 12px;
+}
+
+#gender {
+  outline: none;
+  padding: 0 11px;
+  color: #758693;
+  border: 1px solid#CACACA;
+}
+
+.genderSelect {
+  padding-left: 50px;
+}
+
+.field input:focus {
+  border-bottom-width: 2px;
+}
+
+.eye1 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+.field button {
+  background-image: linear-gradient(to right, #834d9b 0%, #d04ed6 51%, #834d9b 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.field button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-link span,
+.form-link a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #232836;
+}
+
+.form a {
+  color: #0171d3;
+  text-decoration: none;
+}
+
+.form-content a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #d4d4d4;
+}
+
+.line::before {
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  color: #8b8b8b;
+  padding: 0 15px;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.facebook {
+  color: #fff;
+  background-color: #4267b2;
+}
+
+a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.facebook-icon,
+img.google-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+img.google-img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+a.google {
+  border: 1px solid #CACACA;
+}
+
+a.google span {
+  font-weight: 500;
+  opacity: 0.6;
+  color: #232836;
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 20px 10px;
+  }
+
+}
+
+
+.loginNewFormDiv {
+  margin-top: 20px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.field1 {
+  width: 49%;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.field1 input {
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+  border: 1px solid #cacaca;
+  font-size: 12px;
+}
+
+.loginNewFormDiv2 {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.optiongender1 {
+  font-size: 12px;
+}
+
+.fieldEmail {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+.fieldEmail input {
+  width: 100%;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 12px;
+}
+
+@media (max-width: 401px) {
+  .eye2 {
+    position: absolute;
+    top: 50%;
+    margin-top: 23px;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 401px) {
+  .eye2 {
+    position: absolute;
+    top: 50%;
+    margin-top: 23px;
+    right: 40px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+
+
+
+
+.fieldPassword {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+
+}
+
+.fieldPassword input {
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  font-size: 12px;
+}
+
+.fieldButton button {
+  background-image: linear-gradient(to right, #834d9b 0%, #d04ed6 51%, #834d9b 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.fieldButton button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fieldButton {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.form-link1 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link1 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #232836;
+}
+
+.line1 {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 8px 0;
+  background-color: #d4d4d4;
+}
+
+.line1::before {
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  color: #8b8b8b;
+  padding: 0 15px;
+}
+
+.iconsMain {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.iconFacebook {
+  width: 40px;
+  height: 40px;
+}
+
+.iconGoogle {
+  width: 40px;
+  height: 40px;
+}
